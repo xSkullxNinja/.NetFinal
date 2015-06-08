@@ -1,0 +1,26 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>_Layout</title>
+        <link rel="stylesheet" href="~/Styles/testing.css" type="text/css" />
+    </head>
+    <body>
+        <header>Pokemon Card Collection</header>
+        <div class="navbar navbar-inverse">
+            @Html.Partial("_NavbarPartial")
+        </div>
+        <div class="container body-content">
+            @RenderBody()
+            <hr />
+            <footer>
+                <p class="copyright">&copy; @DateTime.Now.Year - Anime Log</p>
+            </footer>
+        </div>
+    </body>
+</html>

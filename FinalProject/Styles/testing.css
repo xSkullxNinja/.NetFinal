@@ -1,0 +1,43 @@
+﻿.navbar-inverse .navbar-item:hover,
+.navbar-inverse .navbar-item:focus {
+    color: #ffffff;
+    background-color: #CC5127;
+}
+
+.navbar-inverse {
+    background-color: #FF4029;
+    border-color: #FFFFFF;
+}
+
+.navbar-inverse .navbar-item {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.navbar {
+    z-index: 1000;
+    min-height: 50px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+}
+
+.navbar-item {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.navbar-item {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+
+header {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+.navbar {
+    text-align: center;
+}
