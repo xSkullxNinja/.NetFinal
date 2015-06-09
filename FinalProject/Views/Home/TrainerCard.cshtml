@@ -1,0 +1,20 @@
+﻿@using FinalProject.Models
+@model Trainer
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Trainer";
+}
+
+<div class="bodyContent">
+    <h3>@Model.CardName</h3>
+
+    <h5>@Model.Description</h5>
+    
+    <ul>
+        <li>@Model.Description1</li>
+        <li>@Model.Description2</li>
+        <li>@Model.Description3</li>
+    </ul>
+</div>
+

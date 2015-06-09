@@ -1,0 +1,30 @@
+﻿@using FinalProject.Models
+@model Pokemon
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Pokemon";
+}
+
+<div class="bodyContent">
+    <img src="@System.IO.File.ReadAllBytes(@Model.Image)" />
+    <h3>@Model.CardName</h3>
+
+    <h4>Type : @Model.Type</h4>
+    <h4>@Model.HP</h4>
+    <div class="ability">
+        <h4>@Model.AbilityName: </h4>
+        <h5>@Model.AbilityDescription</h5>
+    </div>
+    <div class="attack">
+        <h4>@Model.Attack1Name: </h4>
+        <h5>@Model.Attack1Description</h5>
+        <h4>@Model.Attack1Damage</h4>
+    </div>
+
+    <ul>
+        <li>@Model.Description1</li>
+        <li>@Model.Description2</li>
+        <li>@Model.Description3</li>
+    </ul>
+</div>

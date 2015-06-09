@@ -1,12 +1,15 @@
-﻿.navbar-inverse .navbar-item:hover,
+﻿body {
+    background-color: #F5F3EE;
+}
+.navbar-inverse .navbar-item:hover,
 .navbar-inverse .navbar-item:focus {
-    color: #ffffff;
-    background-color: #CC5127;
+    color: #000000;
+    background-color: #03addc;
 }
 
 .navbar-inverse {
-    background-color: #FF4029;
-    border-color: #FFFFFF;
+    background-color: #01708f;
+    border-color: #000000;
 }
 
 .navbar-inverse .navbar-item {
@@ -35,9 +38,18 @@
 
 header {
     text-align: center;
-    font-size: 40px;
+    font-size: 50px;
     font-weight: bold;
+    color: #020468
 }
 .navbar {
     text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.bodyContent {
+    padding: 1em 10%;
+    margin: 1em 10%;
+    background-color: #020468;
+    color: #71daf7;
 }

@@ -1,0 +1,34 @@
+﻿@using FinalProject.ViewModel
+@model CardViewModel
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Catalog";
+}
+
+<div class="bodyContent">
+    <h1>Catalog</h1>
+    @for (int i = 0; i < @Model.pokemon.Count; i++)
+    {
+        @*<h4 class="Link">*@
+            @Html.ActionLink(@Model.pokemon[i].CardName, "PokemonCard", @Model.pokemon[i])
+        @*</h4>*@
+        <br />
+        //Html.RenderPartial("~/Views/Shared/_PokemonCard.cshtml", @Model.pokemon[i]);
+    }
+    <hr />
+    @for (int i = 0; i < @Model.trainer.Count; i++)
+    {
+        @Html.ActionLink(@Model.trainer[i].CardName, "TrainerCard", @Model.trainer[i]);
+        //Html.RenderPartial("~/Views/Shared/_TrainerCard.cshtml", @Model.trainer[i]);
+        <br />
+    }
+    <hr />
+    @for (int i = 0; i < @Model.energy.Count; i++)
+    {
+        @Html.ActionLink(@Model.energy[i].CardName, "EnergyCard", @Model.energy[i]);
+        //Html.RenderPartial("~/Views/Shared/_EnergyCard.cshtml", @Model.energy[i]);
+        <br />
+    }
+    <hr />
+</div>

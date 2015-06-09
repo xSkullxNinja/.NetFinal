@@ -1,0 +1,17 @@
+﻿@using FinalProject.Models
+@model Energy
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Energy";
+}
+
+<div class="bodyContent">
+    <h3>@Model.CardName</h3>
+
+    <ul>
+        <li>@Model.Description1</li>
+        <li>@Model.Description2</li>
+        <li>@Model.Description3</li>
+    </ul>
+</div>

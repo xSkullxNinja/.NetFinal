@@ -8,8 +8,6 @@ namespace FinalProject.Models
     public class Ability
     {
         #region Properties
-        public string AbilityName  { get; set; }
-        public string AbilityDescription { get; set; }
         #endregion
     }
 }

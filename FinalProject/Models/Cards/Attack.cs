@@ -13,6 +13,7 @@ namespace FinalProject.Models
         public string AttackDescription { get; set; }
         public int EnergyCost { get; set; }
         public pokemonType[] EnergyTypes { get; set; }
+        public int AttackDamage { get; set; }
         #endregion
     }
 }

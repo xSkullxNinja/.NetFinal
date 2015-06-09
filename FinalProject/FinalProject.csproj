@@ -7,7 +7,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{B3CF1F09-8E1D-4753-B51D-7BFAB9E3C6E3}</ProjectGuid>
+    <ProjectGuid>{0236F9EB-A514-438B-9D1F-E2BCF0E5848C}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -81,7 +81,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
-    <Content Include="Styles\testing.css" />
+    <Content Include="Styles\Main.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -93,30 +93,35 @@
     </Compile>
     <Compile Include="Models\Cards\Ability.cs" />
     <Compile Include="Models\Cards\Attack.cs" />
-    <Compile Include="Models\Packs\TinSet.cs" />
-    <Compile Include="Models\Packs\BoosterBox.cs" />
-    <Compile Include="Models\Packs\CardBox.cs" />
-    <Compile Include="Models\Packs\CardPack.cs" />
     <Compile Include="Models\Cards\Energy.cs" />
     <Compile Include="Models\Cards\Pokemon.cs" />
     <Compile Include="Models\Cards\PokemonCard.cs" />
     <Compile Include="Models\Cards\SpecialEnergy.cs" />
     <Compile Include="Models\Cards\Trainer.cs" />
+    <Compile Include="Models\Packs\BoosterBox.cs" />
+    <Compile Include="Models\Packs\CardBox.cs" />
+    <Compile Include="Models\Packs\CardPack.cs" />
     <Compile Include="Models\Packs\Collection.cs" />
     <Compile Include="Models\Packs\CollectionBox.cs" />
     <Compile Include="Models\Packs\Deck.cs" />
     <Compile Include="Models\Packs\EXBox.cs" />
     <Compile Include="Models\Packs\PinPack.cs" />
     <Compile Include="Models\Packs\SpecialEdition.cs" />
+    <Compile Include="Models\Packs\TinSet.cs" />
     <Compile Include="Models\Packs\TrainerBox.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModel\CardViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
     <Content Include="packages.config" />
+    <Content Include="Views\Home\Catalog.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Shared\_NavbarPartial.cshtml" />
+    <Content Include="Views\Home\PokemonCard.cshtml" />
+    <Content Include="Views\Home\EnergyCard.cshtml" />
+    <Content Include="Views\Home\TrainerCard.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -140,7 +145,7 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>59373</DevelopmentServerPort>
+          <DevelopmentServerPort>50389</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost:59373/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
