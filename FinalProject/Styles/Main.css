@@ -53,3 +53,26 @@ header {
     background-color: #020468;
     color: #71daf7;
 }
+.images {
+    width: 200px;
+    height: 300px;
+}
+.thumbNail {
+    width: 50px;
+    height: 75px;
+}
+a {
+    text-align: center;
+    font-size: 20px;
+    /*text-decoration: none;*/
+}
+a:link {
+    color: #71daf7;
+}
+a:visited {
+    color: #71daf7;
+}
+a:hover,
+a:active {
+    color: #F5F3EE;
+}

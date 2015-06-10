@@ -10,24 +10,22 @@
     <h1>Catalog</h1>
     @for (int i = 0; i < @Model.pokemon.Count; i++)
     {
-        @*<h4 class="Link">*@
-            @Html.ActionLink(@Model.pokemon[i].CardName, "PokemonCard", @Model.pokemon[i])
-        @*</h4>*@
+        <img class="thumbNail" src="@String.Format("data:image/gif;base64,{0}", Convert.ToBase64String(@System.IO.File.ReadAllBytes(@Model.pokemon[i].Image)))" />
+        @Html.ActionLink(@Model.pokemon[i].CardName, "PokemonCard", @Model.pokemon[i])
         <br />
-        //Html.RenderPartial("~/Views/Shared/_PokemonCard.cshtml", @Model.pokemon[i]);
     }
     <hr />
     @for (int i = 0; i < @Model.trainer.Count; i++)
     {
-        @Html.ActionLink(@Model.trainer[i].CardName, "TrainerCard", @Model.trainer[i]);
-        //Html.RenderPartial("~/Views/Shared/_TrainerCard.cshtml", @Model.trainer[i]);
+        <img class="thumbNail" src="@String.Format("data:image/gif;base64,{0}", Convert.ToBase64String(@System.IO.File.ReadAllBytes(@Model.trainer[i].Image)))" />
+        @Html.ActionLink(@Model.trainer[i].CardName, "TrainerCard", @Model.trainer[i])
         <br />
     }
     <hr />
     @for (int i = 0; i < @Model.energy.Count; i++)
     {
-        @Html.ActionLink(@Model.energy[i].CardName, "EnergyCard", @Model.energy[i]);
-        //Html.RenderPartial("~/Views/Shared/_EnergyCard.cshtml", @Model.energy[i]);
+        <img class="thumbNail" src="@String.Format("data:image/gif;base64,{0}", Convert.ToBase64String(@System.IO.File.ReadAllBytes(@Model.energy[i].Image)))" />
+        @Html.ActionLink(@Model.energy[i].CardName, "EnergyCard", @Model.energy[i])
         <br />
     }
     <hr />
