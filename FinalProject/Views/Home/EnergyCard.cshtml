@@ -7,12 +7,16 @@
 }
 
 <div class="bodyContent">
-    <img class="images" src="@String.Format("data:image/gif;base64,{0}", Convert.ToBase64String(@System.IO.File.ReadAllBytes(@Model.Image)))" />
-    <h3>@Model.CardName</h3>
-
-    <ul>
-        <li>@Model.Description1</li>
-        <li>@Model.Description2</li>
-        <li>@Model.Description3</li>
-    </ul>
+    <div class="leftCard">
+        <img class="images" src="@String.Format("data:image/gif;base64,{0}", Convert.ToBase64String(@System.IO.File.ReadAllBytes(@Model.Image)))" />
+    </div>
+    <div class="rightCard">
+        <h3>@Model.CardName</h3>
+        <h3>$@Model.Price.ToString("F")</h3>
+        <ul>
+            <li>@Model.Description1</li>
+            <li>@Model.Description2</li>
+            <li>@Model.Description3</li>
+        </ul>
+    </div>
 </div>

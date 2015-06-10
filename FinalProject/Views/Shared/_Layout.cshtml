@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="~/Styles/Main.css" type="text/css" />
     </head>
     <body>
+        <img class="logoImage" src="@String.Format("data:image/gif;base64,{0}", Convert.ToBase64String(@System.IO.File.ReadAllBytes("C:\\Users\\Trenton Arndt\\Downloads\\logo.jpg")))" />
         <header>Pokemon Card Collection</header>
         <div class="navbar navbar-inverse">
             @Html.Partial("_NavbarPartial")
@@ -19,7 +20,7 @@
             @RenderBody()
             <hr />
             <footer>
-                <p class="copyright">&copy; @DateTime.Now.Year - Card Collection</p>
+                <p class="copyright">Card Collection Site by Trenton Arndt</p>
             </footer>
         </div>
     </body>

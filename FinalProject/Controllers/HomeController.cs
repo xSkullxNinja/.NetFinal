@@ -39,7 +39,8 @@ namespace FinalProject.Controllers
                 Description1 = "Rare card from the Base Pokemon Card Set.",
                 Description2 = "The original Most Wanted Pokemon Card.",
                 Description3 = "The Card that everyone wanted.",
-                Image = "C:\\Users\\Trenton Arndt\\Downloads\\CharizardBaseSet.jpg"
+                Image = "C:\\Users\\Trenton Arndt\\Downloads\\CharizardBaseSet.jpg",
+                Price = Convert.ToDecimal(79.99)
             });
             CardModel.pokemon = pokemon;
             List<Trainer> trainer = new List<Trainer>();
@@ -50,7 +51,8 @@ namespace FinalProject.Controllers
                 Description1 = "Easy way to get cards from your deck.", 
                 Description2 = "Many trainer cards can be played in one turn.", 
                 Description3 = "This card can get you needed cards that you would want.",
-                Image = "C:\\Users\\Trenton Arndt\\Downloads\\bill.jpg"
+                Image = "C:\\Users\\Trenton Arndt\\Downloads\\bill.jpg",
+                Price = Convert.ToDecimal(0.50)
             });
             CardModel.trainer = trainer;
             List<Energy> energy = new List<Energy>();
@@ -61,7 +63,8 @@ namespace FinalProject.Controllers
                 Description1 = "A card that is needed for every Pokemon Card to attack.",
                 Description2 = "Basic Water Card that can be used for many things.",
                 Description3 = "Pokemon Energy Card",
-                Image = "C:\\Users\\Trenton Arndt\\Downloads\\basicWater.jpg"
+                Image = "C:\\Users\\Trenton Arndt\\Downloads\\basicWater.jpg",
+                Price = Convert.ToDecimal(0.50)
             });
             CardModel.energy = energy;
             return View(CardModel);

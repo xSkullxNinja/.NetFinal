@@ -35,12 +35,21 @@
     display: block;
     padding: 10px 15px;
 }
-
+.PageTitle {
+    text-align: center;
+    font-size: 35px;
+}
 header {
     text-align: center;
     font-size: 50px;
     font-weight: bold;
-    color: #020468
+    color: #020468;
+}
+.logoImage {
+    width: 150px;
+    height: 100px;
+    padding-left: 20%;
+    margin-left: 25%;
 }
 .navbar {
     text-align: center;
@@ -48,18 +57,20 @@ header {
     margin-right: 10%;
 }
 .bodyContent {
-    padding: 1em 10%;
-    margin: 1em 10%;
+    width: 40%;
+    padding: 1em 15%;
+    margin: 1em 15%;
     background-color: #020468;
     color: #71daf7;
 }
 .images {
-    width: 200px;
-    height: 300px;
+    width: 300px;
+    height: 450px;
 }
 .thumbNail {
     width: 50px;
     height: 75px;
+    display: inline-block;
 }
 a {
     text-align: center;
@@ -75,4 +86,33 @@ a:visited {
 a:hover,
 a:active {
     color: #F5F3EE;
+}
+.rightPart {
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 50%;
+    display: inline-block;
+    vertical-align: 15px;
+}
+.leftPart {
+    margin-left: 5%;
+    margin-right: 5%;
+    display: inline-block;
+}
+.rightCard {
+    margin-left: 5%;
+    margin-right: -5%;
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+.leftCard {
+    margin-left: -5%;
+    margin-right: 5%;
+    display: inline-block;
+}
+.copyright {
+    margin-left: 10%;
+    margin-right: 10%;
 }
